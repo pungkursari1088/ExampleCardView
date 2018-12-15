@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardElevation="20dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"
+            android:background="@mipmap/ic_launcher"/>
+        <TextView
+            android:id="@+id/txNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgView"
+            android:layout_margin="10dp"
+            android:textSize="24sp"
+            android:text="Contoh Judul"/>
+        <TextView
+            android:id="@+id/txDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@id/txNama"
+            android:layout_toRightOf="@id/imgView"
+            android:textSize="20sp"
+            android:text="Deskripsi"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
